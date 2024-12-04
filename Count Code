@@ -1,0 +1,17 @@
+#30 secs by default move stick up or down decrease or increase by 10
+import time
+import cyberpi
+
+def countdown(t):
+    while t:
+        mins,secs = divmod(t, 60)
+        timer = '{:02d} : {:02d}'.format(mins,secs)
+        cyberpi.display.show_label(timer,150,50,60)
+        time.sleep(1)
+        t-=1
+    cyberpi.display.show_label("00 : 00",150,50,60)
+    print("Times up!")
+
+
+
+countdown(30)
