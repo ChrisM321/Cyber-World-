@@ -5,5 +5,6 @@
 2.Upon landing on a Jeopardy spot, you have a choice to skip it. However, you will receive zero points.\
 3.When both users reach the end of the game, points will be tallied up. Whoever has the most points, will be the winner.\
 4.Card Spaces allow the user to spend some of their points to pick up a Passive or Offensive card. **Offensive** cards can be used to hinder the enemy team from getting any sort of leverage that they have over the opposing team. **Passive** will have benefits to the user that has purchased it. The cards are to be shuffled after every round.\
+5.When both robots reach the end, compare points or press the B button on the Mbot2 to make it go all the way around to the beginning!\
 **Have fun!**\
 -Mbot Party Team
