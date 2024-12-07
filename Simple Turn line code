@@ -1,0 +1,11 @@
+import event, mbot2
+
+@event.is_press('a')
+def is_btn_press():
+    mbot2.turn(90)
+    mbot2.straight(13)
+    mbot2.turn(98)
+    mbot2.straight(195)
+    mbot2.turn(90)
+    mbot2.straight(17)
+    mbot2.turn(90)
