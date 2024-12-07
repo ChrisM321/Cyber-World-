@@ -1,0 +1,25 @@
+import cyberpi
+import mbot2
+import mbuild
+import event
+import time
+
+
+def smooth_turn(deviation):
+    kp = .35  
+    base_power = 30
+
+    left_power = base_power - (kp * deviation)
+    right_power = -base_power - (kp * deviation)
+
+    mbot2.EM_set_power(left_power, "EM1")  # Left motor
+    mbot2.EM_set_power(right_power, "EM2")  # Right motor
+
+
+@event.is_press('a')
+def follow_line():
+    mbot2.turn(90)
+    while True:
+        deviation = mbuild.quad_rgb_sensor.get_offset_track(index=1)
+
+        smooth_turn(deviation)
